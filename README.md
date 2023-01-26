@@ -1,4 +1,4 @@
-- 👋 Hello, I’m @devinhicks, a recent graduate with a Bachelor of Science in Simulation Science, Games, and Animation from Embry-Riddle Aeronautical University. 
+<!---- 👋 Hello, I’m @devinhicks, a recent graduate with a Bachelor of Science in Simulation Science, Games, and Animation from Embry-Riddle Aeronautical University. 
 That mouthful is to say: I'm looking for a job! My skills range from 3D modeling in Maya and ZBrush to designing, programming, and implementing games in Unity3D.
 I'm very comfortable with C# and C, anf familiar with C++, Python, HTML5, JavaScript, and WebGL.
 
