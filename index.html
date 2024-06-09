@@ -2,146 +2,1150 @@
 <html lang="en">
 <head>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Game Developer Portfolio">
+    <meta name="keywords" content="Unity, Game Developer, Programmer, UI/UX, 3D Modeling">
+    <meta name="author" content="Devin Hicks">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Devin Hicks: Game UI/VFX Portfolio</title>
+    <title>Devin Hicks: Game Development Portfolio</title>
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
 
-<!-- Main css -->
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- PRE LOADER -->
+    <!-- Navigation section  -->
 
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
-     </div>
-</div>
+    <header class="navbar navbar-default" role="navigation">
+        <nav class="container">
 
-<!-- Navigation section  -->
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><h4>HOME</h4></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="portfolio" id="portfolioLink"><a href="#portfolio">My Projects</a></li>
+                    <li class="about" id="aboutLink"><a href="#about">About Me</a></li>
+                    <li class="contact" id="contactLink"><a href="#contact">Contact Info</a></li>
+                    <li><a href="files/Hicks_Devin_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
+        </nav>
+    </header>
 
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <a href="index.html" class="navbar-brand"><i class="fa fa-magnet"></i></a>
-          </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">My Projects</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact Info</a></li>
-               </ul>
-          </div>
+    <!-- Home Section -->
 
-  </div>
-</div>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h2>
+                        I'm <span style="color:#9FB816;">Devin Hicks</span>, a <strong>Unity Developer & Programmer</strong>.<br />I have a degree in
+                        <a href="https://erau.edu/degrees/bachelor/simulation-science-games-animation" target="_blank">Simulation Science, Games, & Animation</a>
+                        from Embry-Riddle Aeronautical University, and professional experience in graphic design.<br /><br />
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Home Section -->
+    <!-- Portfolio Section -->
 
-<section id="home">
-     <div class="container">
-          <div class="row">
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
 
-               <div class="col-md-12 col-sm-12">
-                    <h1>Howdy!</h1>
-                    <h2>I'm Devin Hicks, a <strong>UI/VFX Artist & Programmer</strong>. I have a degree in <a href="https://prescott.erau.edu/degrees/computers-technology/design-your-future">Simulation Science, Games, & Animation</a> from Embry-Riddle Aeronautical University, and professional experience in graphic design. Check out my work below or <strong>watch my demo reel <a href="#">here</a></strong>.</h2>
-               </div>
+                <!-- TINY PLANET APOTHECARY -->
 
-          </div>
-     </div>
-</section>
-
-<!-- Portfolio Section -->
-
-<section id="portfolio">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-4 col-sm-6">
-                    <a href="takopothecary.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3>Tiny Planet Apothecary</h3>
-                                             <small>UI Design & Implementation, Character Rigging, Environment Modeling</small>
-                                        </div>
-                                   </div>
-                         </div>
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#TPA">
+                        <div class="portfolio-thumb">
+                            <img src="images/TPA/cottage-concept.jpg" class="img-responsive" alt="Portfolio" style="aspect-ratio: 1/1; object-fit:cover;">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Tiny Planet Apothecary</h3>
+                                    <p>UI Design & Implementation, Character Rigging, Environment Modeling</p>
+                                </div>
+                            </div>
+                        </div>
                     </a>
-               </div>
+                </div>
 
-               <div class="col-md-12 col-sm-12 text-center">
-                    <h3>I'm currently looking to fill a UI/VFX position - <a href="contact.html">get in touch with me!</a></h3>
-               </div>
+                <!-- AFTERWORLDS -->
 
-          </div>
-     </div>
-</section>
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#Afterworlds">
+                        <div class="portfolio-thumb">
+                            <img src="images/Afterworlds/Afterworlds-title.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Afterworlds</h3>
+                                    <p>Game Jam, UI Design & Implementation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-<!-- Footer Section -->
+                <!-- FACTORY RESET -->
 
-<footer>
-     <div class="container">
-          <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#FactoryReset">
+                        <div class="portfolio-thumb">
+                            <img src="images/FactoryReset/factory-reset-cover.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Factory Reset</h3>
+                                    <p>Game Jam, Project Management, Art Asset Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-               <div class="col-md-3 col-sm-3">
-                    <i class="fa fa-magnet"></i>
-               </div>
+                <!-- Treatise -->
 
-               <div class="col-md-4 col-sm-4">
-                    
-               </div>
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#Treatise">
+                        <div class="portfolio-thumb">
+                            <img src="images/Treatise/treatise-cover.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Treatise</h3>
+                                    <p>Board Game Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-               <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
-                    <p><a href="mailto:devinhicks.az@gmail.com">devinhicks.az@gmail.com</a></p>
-               </div>
+                <!-- VR -->
 
-               <div class="clearfix col-md-12 col-sm-12">
-                    <hr>
-               </div>
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#VR">
+                        <div class="portfolio-thumb">
+                            <img src="images/VR/VR-cover.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>VR Systems</h3>
+                                    <p>Unity VR Game Development, Oculus Rift</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-               <div class="col-md-6 col-sm-6">
-                    <div class="footer-copyright">
-                         <p>© 2023 Devin Hicks | All Rights Reserved.</p>
+                <!-- Tea Frog -->
+
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#TeaFrog">
+                        <div class="portfolio-thumb">
+                            <img src="images/TeaFrog/tea-frog-cover.png" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Tea Frog</h3>
+                                    <p>Unity Mobile Game Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Patterns -->
+
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#Patterns">
+                        <div class="portfolio-thumb">
+                            <img src="images/Patterns/patterns-cover.png" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Programming Patterns</h3>
+                                    <p>Unity Game Development, AI, Game Engine Architecture</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- MULTIPLAYER SYSTEMS -->
+
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#Multiplayer">
+                        <div class="portfolio-thumb">
+                            <img src="images/MP/multiplayer-cover.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>Multiplayer Systems</h3>
+                                    <p>Unity Game Development, Multiplayer Networking, Multiplayer Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 2D & 3D Art -->
+
+                <div class="col-md-4 col-sm-6">
+                    <a data-toggle="modal" href="#art">
+                        <div class="portfolio-thumb">
+                            <img src="images/art/jimi.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>2D & 3D  Art</h3>
+                                    <p>Photoshop, Illustrator, Procreate, Maya, ZBrush, Substance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="col-md-8 col-sm-12">
+                        <h4>ABOUT ME</h4>
+
+                        <p>
+                            My name's Devin <span style="font-size: 12px;">(she/her)</span>, and I am a game developer and artist with a degree in Simulation Science,
+                            Games, and Animation from Embry-Riddle Aeronautical University. I also have professional experience in graphic design, web development, and customer service.<br /><br />
+                            I make games to contribute to what I believe is an incredibly powerful and significant art medium and industry. Game theory and design are my driving passions, 
+                            and I look ahead to a lifetime of growth and learning in this field.<br /><br />
+                            When I'm not making games, I'm playing them - I'm a big fan of The Legend of Zelda series, indies like Hades and Hollow Knight, and classics
+                            like the Sims 2 and Super Smash Bros.
+                        </p>
+
                     </div>
-               </div>
+                    <div class="col-md-4 col-sm-8">
+                        <img src="images/about-image.jpg" class="img-responsive" alt="About" style="vertical-align: middle;">
+                    </div>
 
-               <div class="col-md-6 col-sm-6">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="section-title">
+                    </div>
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h3 style="text-align:center;">GET IN TOUCH<br /><br /><a href="mailto:devinhicks.az@gmail.com">devinhicks.az@gmail.com</a> | (813)489-6664</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-copyright">
+                        <p>© 2024 Devin Hicks | All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
                     <ul class="social-icon">
-                         <li><a href="#" class="fa fa-facebook"></a></li>
-                         <li><a href="#" class="fa fa-twitter"></a></li>
-                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://www.linkedin.com/in/devinlhicks/" target="_blank" class="fa fa-linkedin"></a></li>
                     </ul>
-               </div>
-               
-          </div>
-     </div>
-</footer>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------
+             Portfolio Modals
+    --------------------------------->
+    <!-- Tiny Planet Apothecary Modal-->
+
+    <div id="TPA" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close" tabindex="0">&times;</button>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h2>TINY PLANET APOTHECARY</h2>
+                        <p><strong>Duration:</strong> 10 Months | <strong>Team size:</strong> 3 | <strong>Platform:</strong> PC | <strong>Engine and tools:</strong> Unity, C#, Maya</p>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <video width="100%" height="100%" controls autoplay loop muted>
+                            <source src="images/TPA/TPA-trailer.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p style="text-align: left;">
+                            For my senior capstone project, my two teammates and I created <strong>Tiny Planet Apothecary</strong>, a task-driven
+                            potion making and exploration game set on a very small planet in a star system full of magic. The player controls a human character of their
+                            own design, and explores the different areas of their little home planet, collecting different ingredients to farm and craft potions with. On their journey,
+                            they are accompanied by Tako, an octopus and potions master looking for his lost family.
+                            <br />
+                        </p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <h3>SUMMARY OF RESPONSIBILITIES</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h4>UI Design & Implementation</h4>
+                        <ul>
+                            <li>Gathered references for UI designs from games like Breath of the Wild, Stardew Valley, and Genshin Impact</li>
+                            <li>Created wireframes and concepts for menus and HUD</li>
+                            <li>Iterated over layouts and designs on paper and in Photoshop</li>
+                            <li>Worked closely with programmer to ensure functionality of the UI within existing code</li>
+                            <li>Implemented the final designs in a collaborative Unity project</li>
+                            <li>Created UI assets in Photoshop from my own designs, as well as icons based on concepts by the lead artist</li>
+                        </ul>
+                    </div>
+                    <!-- HUD UI Images -->
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/TPA/originalHUD.jpg" data-lightbox="TPA" data-title="Version 1 of the HUD">
+                            <img src="images/TPA/originalHUD.jpg" class="img-fluid" />
+                            <p>Version 1 of the HUD</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/TPA/HUD-final.gif" data-lightbox="TPA" data-title="Final Version of the HUD">
+                            <img src="images/TPA/HUD-final.gif" class="img-fluid" />
+                            <p>Final Version of the HUD</p>
+                        </a>
+                    </div>
+                    <!-- Inventory UI Images -->
+                    <div class="col-md-4 col-sm-12 ar16-9">
+                        <a href="images/TPA/originalIngredientInventory.jpg" data-lightbox="TPA" data-title="Version 1 of the Inventory UI">
+                            <img src="images/TPA/originalIngredientInventory.jpg" class="img-fluid" />
+                            <p>Version 1 of the Inventory UI</p>
+                        </a>
+                        <a href="images/TPA/UItemplate.jpg" data-lightbox="TPA" data-title="Final Version of the Inventory UI (Character placeholders courtesy of Ooblets!)">
+                            <img src="images/TPA/UItemplate.jpg" class="img-fluid" />
+                            <p>Final Version of the Inventory UI</p>
+                        </a>
+                    </div>
+                    <!-- Potion Craftin UI Images -->
+                    <div class="col-md-4 col-sm-12 ar16-9">
+                        <a href="images/TPA/originalCauldron.jpg" data-lightbox="TPA" data-title="Version 1 of the Potion Crafting UI">
+                            <img src="images/TPA/originalCauldron.jpg" class="img-fluid" />
+                            <p>Version 1 of the Potion Crafting UI</p>
+                        </a>
+                        <a href="images/TPA/cauldronUI.jpg" data-lightbox="TPA" data-title="Final Version of the Potion Crafting UI">
+                            <img src="images/TPA/cauldronUI.jpg" class="img-fluid" />
+                            <p>Final Version of the Potion Crafting UI</p>
+                        </a>
+                    </div>
+                    <!-- Quests UI Images -->
+                    <div class="col-md-4 col-sm-12 ar16-9">
+                        <a href="images/TPA/quests-original.jpeg" data-lightbox="TPA" data-title="Version 1 of the Quest Tracking UI">
+                            <img src="images/TPA/quests-original.jpeg" class="img-fluid" />
+                            <p>Version 1 of the Quest Tracking UI</p>
+                        </a>
+                        <a href="images/TPA/quests-final.jpeg" data-lightbox="TPA" data-title="Final Version of the Quest Tracking UI">
+                            <img src="images/TPA/quests-final.jpeg" class="img-fluid" />
+                            <p>Final Version of the Quest Tracking UI</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h4>3D Asset Creation & Character Rigging</h4>
+                        <ul>
+                            <li>Gathered references for vision boards to inspire mood and style of the game</li>
+                            <li>Created and itereated over concept art for the player's cottage, then modeled and textured the exterior and interior spaces</li>
+                            <li>Modeled and textured farming ingredients and character customizations based on concepts created by the lead artist</li>
+                            <li>Retopologized, rigged, and created controls for both the human player character and the player companion character, an octopus named Tako</li>
+                        </ul>
+                    </div>
+                    <!-- Cottage Model -->
+                    <div class="col-md-offset-1 col-md-5 col-sm-12 ar16-9">
+                        <a href="images/TPA/cottage-concept.jpg" data-lightbox="TPA" data-title="Cottage Concept Art">
+                            <img src="images/TPA/cottage-concept.jpg" class="img-fluid" />
+                            <p>Cottage Concept Art</p>
+                        </a>
+                    </div>
+                    <a href="images/TPA/cottage-concept-back.jpg" data-lightbox="TPA" data-title="Cottage Concept Art"></a>
+                    <div class="col-md-5 col-sm-12 ar16-9">
+                        <a href="images/TPA/cottage-exterior.gif" data-lightbox="TPA" data-title="Cottage Exterior Model">
+                            <img src="images/TPA/cottage-exterior.gif" class="img-fluid" />
+                            <p>Cottage Exterior Model</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-5 col-sm-12 ar16-9">
+                        <a href="images/TPA/cottage-interior.gif" data-lightbox="TPA" data-title="Cottage Interior Model">
+                            <img src="images/TPA/cottage-interior.gif" class="img-fluid" />
+                            <p>Cottage Interior Model</p>
+                        </a>
+                    </div>
+                    <div class="col-md-5 col-sm-12 ar16-9">
+                        <a href="images/TPA/potion-crafting.gif" data-lightbox="TPA" data-title="Cottage Interior In-Game">
+                            <img src="images/TPA/potion-crafting.gif" class="img-fluid" />
+                            <p>Cottage Interior In-Game</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Tako Hats-->
+                    <div class="col-md-offset-1 col-md-5 col-sm-12 ar1-1">
+                        <a href="images/TPA/tako-hat-concepts.jpg" data-lightbox="TPA" data-title="Tako Hat Concepts by Catalina Montelongo">
+                            <img src="images/TPA/tako-hat-concepts.jpg" class="img-fluid" />
+                            <p>Tako Hat Concepts by Catalina Montelongo</p>
+                        </a>
+                    </div>
+                    <div class="col-md-5 col-sm-12 ar1-1">
+                        <a href="images/TPA/tako-hats.gif" data-lightbox="TPA" data-title="Tako Hat Models">
+                            <img src="images/TPA/tako-hats.gif" class="img-fluid" />
+                            <p>Tako Hat Models</p>
+                        </a>
+                    </div>
+                </div>
 
 
-<!-- SCRIPTS -->
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h4>Game Design</h4>
+                        <ul>
+                            <li>In collaboartion with team, iterated over gameplay mechanics and features</li>
+                            <li>Playtested mechanics using paper prototypes and refined until better balanced</li>
+                            <li>Collaborated on narrative and character design with lead artist</li>
+                            <li>Scripted some simple gameplay elements and companion character customization system</li>
+                            <li>Collaboraatively documented progress during production using Google Docs and summarized into game design document</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h4>You can view our game design document for Tiny Planet Apothecary <a href="files/TPA-GDD.pdf" target="_blank">here</a>!</h4>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Afterworlds Modal-->
+
+    <div id="Afterworlds" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>AFTERWORLDS</h2>
+                        <p><strong>Duration:</strong> 4 Days | <strong>Team size:</strong> 5 | <strong>Platform:</strong> PC | <strong>Engine and tools:</strong> Unity, C#</p>
+                        <p>
+                            <strong>Afterworlds</strong> is a puzzle game my classmates and I created for the Tri-Annual Game Jam hosted by San925 on itch.io. In accordance with the jam theme
+                            <strong>"you are your enemy"</strong>, our game has the player play both a devil and an angel, tasked with working together to solve puzzles in parallel
+                            worlds (aptly themed as heaven and hell).
+                            DOWNLOAD AND PLAY IT <a href="https://devinhicks.itch.io/afterworlds?password=portfolio-viewer" target="_blank">HERE</a>!
+                        </p>
+                    </div>
+                    <br />
+                    <div class="col-md-6 col-sm-12">
+                        <h3>SUMMARY OF RESPONSIBILITIES</h3>
+                        <ul>
+                            <li>With my team, came up with gameplay elements to fit the theme of the jam</li>
+                            <li>Illustrated the title screen</li>
+                            <li>Designed and implemented UI elements and menus</li>
+                            <li>Assisted with 3D modeling environment assets</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/Afterworlds/gameplay.gif" data-lightbox="afterworlds" data-title="Afterworlds Gameplay">
+                            <img src="images/Afterworlds/gameplay.gif" class="img-fluid" />
+                            <p>Afterworlds Gameplay</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Factory Reset Modal -->
+
+    <div id="FactoryReset" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>FACTORY RESET</h2>
+                        <p><strong>Duration:</strong> 3 Days | <strong>Team size:</strong> 14 | <strong>Platform:</strong> PC | <strong>Engine and tools:</strong> Unity, C#, Adobe Photoshop</p>
+                        <p>
+                            In January 2020, our program hosted a <a href="https://globalgamejam.org/" target="_blank">Global Game Jam</a> site through the club I helped found, C-RAD (which
+                            stands for Computer Rendering, Art, and Design). That year, the jam theme was <strong>"Repair"</strong>, so we created <strong>Factory Reset</strong> - a platformer where
+                            you play a recently-awakened robot in the basement of a factory. The player is tasked with collecting batteries to repair the factory and rediscover the surface world.<br />
+                            SEE OUR JAM SITE AND DOWNLOAD THE GAME  <a href="https://v3.globalgamejam.org/2020/games/factory-reset-4" target="_blank">HERE</a>!
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h3>SUMMARY OF RESPONSIBILITIES</h3>
+                        <ul>
+                            <li>Directed the brainstorming session to design gameplay elements that suited the jam theme</li>
+                            <li>Designed and animated the robot player character</li>
+                            <li>Illustrated some of the in-game assets</li>
+                            <li>Acted as liason between the art team, level design team and programming team to ensure we'd meet the jam deadline</li>
+                            <li>Picked up donuts and snacks for the team because I think some of them slept in the lab and otherwise wouldn't have eaten</li>
+                            <li>Designed <a href="files/GGJposter.pdf" target="_blank">a poster</a> to advertise our jam site to the campus</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/FactoryReset/gameplay.gif" data-lightbox="factory-reset" data-title="Factory Reset Gameplay">
+                            <img src="images/FactoryReset/gameplay.gif" class="img-fluid" />
+                            <p>Factory Reset Gameplay</p>
+                        </a>
+                    </div>
+                    <br />
+                    <!-- Assets -->
+                    <div class="col-md-3 col-sm-6 ar3-4">
+                        <a href="images/FactoryReset/robo_concept.jpg" data-lightbox="factory-reset" data-title="Original Robot Concept">
+                            <img src="images/FactoryReset/robo_concept.jpg" class="img-fluid" />
+                            <p>Original Robot Concept</p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ar3-4">
+                        <a href="images/FactoryReset/robo_v01.png" data-lightbox="factory-reset" data-title="Robot Version 1">
+                            <img src="images/FactoryReset/robo_v01.png" class="img-fluid" />
+                            <p>Robot Version 1</p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ar3-4">
+                        <a href="images/FactoryReset/robo_v02.png" data-lightbox="factory-reset" data-title="Robot Version 2">
+                            <img src="images/FactoryReset/robo_v02.png" class="img-fluid" />
+                            <p>Robot Version 2</p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ar3-4">
+                        <a href="images/FactoryReset/robo_final.png" data-lightbox="factory-reset" data-title="Robot Final Version (aka Baby Homebrew)">
+                            <img src="images/FactoryReset/robo_final.png" class="img-fluid" />
+                            <p>Robot Final Version</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 ar1-1">
+                        <a href="images/FactoryReset/death_v01.png" data-lightbox="factory-reset" data-title="Death Sprite Sheet Version 1">
+                            <img src="images/FactoryReset/death_v01.png" class="img-fluid" style="aspect-ratio:1/1; object-fit:cover;" />
+                            <p>Death Sprite Sheet Version 1</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 ar1-1">
+                        <a href="images/FactoryReset/death_v02.png" data-lightbox="factory-reset" data-title="Death Sprite Sheet Version 2">
+                            <img src="images/FactoryReset/death_v02.png" class="img-fluid" style="aspect-ratio:1/1; object-fit:cover;" />
+                            <p>Death Sprite Sheet Version 2</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Treatise Modal -->
+
+    <div id="Treatise" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>TREATISE</h2>
+                        <p>Board Game Development | Duration:</p>
+                        <p>
+                            One of the best courses I took in college was our game design lab, where we learned about game structure, prototyping, and the elements of game design,
+                            as outlined in Tracy Fullerton's <a href="https://www.gamedesignworkshop.com/" target="_blank">Game Design Workshop</a>. To this day, I reference this book
+                            whenever I want to dig deeper into game design fundamentals or revisit an exercise.<br /><br />As the final project
+                            for this class, I created <strong>Treatise: The game of not-so-global domination</strong>, a game that asks: what if Risk was a gameshow?. In this
+                            "strategic game of wits", players battle for territories by answering generic trivia questions or completing silly tasks.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <!-- Planning -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Planning</h3>
+                        <p>
+                            My inspirations for Treatise were the likes of <a href="https://www.jackboxgames.com/" target="_blank">Jackbox Games</a>, Japanese game shows,
+                            <a href="https://youtu.be/-pcsmSGjPUg?si=K2O6yH2EneoLaXZw&t=180" target="_blank">this clip</a> of Blake Griffin on The Tonight Show, and the
+                            absurdity of New Girl's <a href="https://www.youtube.com/watch?v=q_p-_cl5vhc" target="_blank">True American</a>. Using these to ground the "feel" of my
+                            game, I developed the first paper prototype, complete with detailed instructions, handwritten index card questions, and various office supplies pretending to be meeples.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <a href="images/Treatise/game-diagram.png" data-lightbox="treatise" data-title="Treatise Game Diagram">
+                            <img src="images/Treatise/game-diagram.png" class="img-fluid" />
+                            <p>Game Components Diagram</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Development -->
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h3>Development</h3>
+                        <p>
+                            After the initial planning phase, Treatise underwent three revisions, guided by structured playtests. Each phase of the playtesting process focused on
+                            a single concept, which provided a framework for what kind of questions to ask the playtesters. For each playtest I created a script, took notes on my observations
+                            during the test, and documented the changes I planned on making to the prototype based on the playtest results.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4>Phase One: Functionality</h4>
+                        <p>
+                            Description of phase one playtest <br />
+                            <a href="files/Treatise_Rules_V01.pdf" target="_blank">Treatise Rules Version 1</a> | <a href="files/PhaseOne.pdf" target="_blank">Playtest Notes</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4>Phase Two: Completeness</h4>
+                        <p>
+                            Description of phase two playtest <br />
+                            <a href="files/Treatise_Rules_V02.pdf" target="_blank">Treatise Rules Version 2</a> | <a href="files/PhaseTwo.pdf" target="_blank">Playtest Notes</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4>Phase Three: Balance</h4>
+                        <p>
+                            Description of phase three playtest <br />
+                            <a href="files/Treatise_Rules_V03.pdf" target="_blank">Treatise Rules Version 3</a> | <a href="files/PhaseThree.pdf" target="_blank">Playtest Notes</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Final Prototype -->
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h3>Final Prototype</h3>
+                        <p>
+                           Developing <strong>Treatise</strong> was one of the most rewarding experiences during my undergraduate program. Watching people play and enjoy a game I had
+                            lovingly crafted solidified my resolve to work in game development, and sparked what I hope to be a lifelong journey into the study of game design. I hope to one
+                             complete the development of this game and publish it in some form.
+                            <br />
+                            <a href="Treatise_Rules_V04.pdf" target="_blank">Treatise Rules Version 4</a> |
+                            <a href="Challenge_Cards.pdf" target="_blank">Challenge Cards</a> |
+                            <a href="Player_Cards.pdf" target="_blank">Player Kingdom Cards</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- VR Modal -->
+
+    <div id="VR" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>VR GAME SYSTEMS</h2>
+                        <p><strong>Duration:</strong> 1 Semester | <strong>Platform:</strong> Oculus Rift | <strong>Engine and tools:</strong> Unity, C#, Oculus Quest 2</p>
+                        <p>
+                            Virtual Reality Game Systems was one of the courses I took in college. We were povided with an Oculus Rift VR headset for the semester, and learned
+                            how to develop games for VR using Jonathon Linowes' <a href="https://www.packtpub.com/product/unity-2020-virtual-reality-projects-third-edition/9781839217333" target="_blank">
+                                Unity 2020 Virtual Reality Projects
+                            </a>. We were also tasked with weekly research assignments, which of course meant finding and playing VR games. In all, the class
+                            provided valuable experience in programming for VR environments, and gave us the opportunity to find appreciation for the nuance in VR development and immense possibility in VR gaming.<br /><br />
+                            All of these projects use Unity's <a href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/index.html" target="_blank">XR Interaction toolkit</a> and were built
+                            as Android builds, which can be downloaded and side-loaded to a VR headset.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <!-- VR Diorama -->
+
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Diorama</h3>
+                        <p>
+                            This is a simple VR diorama scene - and my first ever VR project! I think the most interesting part about creating this was working with the volumetric effects
+                            to create a sense of depth.<br /><br />
+                            DOWNLOAD THE PROJECT <a href="https://devinhicks.itch.io/diorama-of-a-deserted-island?password=portfolio-viewer" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/VR/diorama.gif" data-lightbox="multi" data-title="VR Diorama">
+                            <img src="images/VR/diorama.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                    <br />
+                </div>
+                <div class="row">
+                    <!-- VR Trails -->
+                    <div class="col-md-6 col-sm-12">
+                        <h3>UI Demonstration with Hand-Based Controls - Color Match & Trails</h3>
+                        <p>
+                            <strong>Color Match</strong> and <strong>Trails</strong> are simple VR game modes used to demonstrate UI in virtual reality and hand-based controls.
+                            In Color Match, rotate your head on all three axes to try to match the color swatch. In Trails, use
+                            the triggers on the controls to create colorful trails of particles. <br /><br />
+                            DOWNLOAD THE PROJECT <a href="https://devinhicks.itch.io/colors-vr?password=portfolio-viewer" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/VR/trails.gif" data-lightbox="multi" data-title="Color Match & Trails">
+                            <img src="images/VR/trails.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                    <br />
+                </div>
+                <!-- VR Statues -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Gaze-Based Controls - Statues</h3>
+                        <p>
+                            This is a simple VR scene demonstrating gaze-based controls. I'm not keen on playing horror games, but I can appreciate the power of horror in VR. This may be too
+                            silly to really qualify as scary, but enter the hall of statues and see for yourself!<br /><br />
+                            DOWNLOAD THE PROJECT <a href="https://devinhicks.itch.io/statues-vr?password=portfolio-viewer" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/VR/statues.gif" data-lightbox="multi" data-title="Statues">
+                            <img src="images/VR/statues.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tea Frog Modal -->
+
+    <div id="TeaFrog" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>Tea Frog</h2>
+                        <p><strong>Duration:</strong> 1 Month | <strong>Team size:</strong> 2 | <strong>Platform:</strong> iOS, Android | <strong>Engine and tools:</strong> Unity, Unity Remote 5, C#</p>
+                        <p>
+                            One of my favorite courses in college was Human Computer Interactions, a software engineering course that taught the fundamentals of user experience design. The final project
+                            for this class was to create an application of our choosing - my partner and I chose to make <strong>Tea Frog</strong>, a hyper-casual mobile game about a little frog running a tea shop.
+                            You can read our full report on the development of our project <a href="files/Tea-Frog-Report.pdf" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 ar-phone">
+                        <a href="images/TeaFrog/menu.png" data-lightbox="teaFrog" data-title="Tea Frog Menu">
+                            <img src="images/TeaFrog/menu.png" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ar-phone">
+                        <a href="images/TeaFrog/instructions.png" data-lightbox="teaFrog" data-title="Tea Frog Instructions">
+                            <img src="images/TeaFrog/instructions.png" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ar-phone">
+                        <a href="images/TeaFrog/gameplay.png" data-lightbox="teaFrog" data-title="Tea Frog Gameplay">
+                            <img src="images/TeaFrog/gameplay.png" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ar-phone">
+                        <a href="images/TeaFrog/pause-menu.png" data-lightbox="teaFrog" data-title="Tea Frog Pause Menu">
+                            <img src="images/TeaFrog/pause-menu.png" class="img-fluid" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h3>SUMMARY OF RESPONSIBILITIES</h3>
+                    <ul>
+                        <li>In collaboration with teammate, planned and iterated over the game concept</li>
+                        <li>Acting as lead developer, created a prototype in Unity (which was tested using the Unity Remote 5 iOS app)</li>
+                        <li>Playtested different variations of game mechanics</li>
+                        <li>Refined prototype based on results of user experience research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Patterns Modal -->
+
+    <div id="Patterns" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>PROGRAMMING PATTERNS</h2>
+                        <p><strong>Duration:</strong> 3 Semester | <strong>Platform:</strong> Web Builds, PC | <strong>Engine and tools:</strong> Unity, C#</p>
+                        <p>
+                            During my bachelors program I took courses in <strong>game development</strong>, <strong>game engine architecture</strong>
+                            and <strong>artificial intelligence</strong> for games. These courses introduced me to common programming patterns, their use cases,
+                            and their flaws. Below are some of the assignments I completed for these courses - though simple, they helped build my foundational
+                            understanding of patterns and their importance in writing clean, readable, reusable code.
+                        </p>
+                        <br />
+                    </div>
+                </div>
+                <!-- Event Systems -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Event Systems</h3>
+                        <p>
+                            This is a singleton event bus as demonstrated by <a href="https://www.packtpub.com/game-development/hands-game-development-patterns-unity-2019" target="_blank">David Baron</a>
+                            supplemented by <a href="https://gameprogrammingpatterns.com/" target="_blank">Nystrom's</a> event queue. The event bus offers a way to decouple listeners and consumers by
+                            providing a broadcasting system for them to communicate with.
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/EventSystems/tree/master/EventBus/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/EventSystems/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/Patterns/event-systems.gif" data-lightbox="Patterns" data-title="Event Systems Demo">
+                            <img src="images/Patterns/event-systems.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <!-- Goal Oriented Behavior -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Goal Oriented Behavior</h3>
+                        <p>
+                            This is a simple implementation of goal oriented behavior in a game character, adapted from Ian Millington's
+                            <a href="https://www.amazon.com/AI-Games-Third-Ian-Millington/dp/1138483974" target="_blank">AI for Games</a>. (As a big fan of the Sims franchise, learning the
+                            how sim-like behavior is structured was a cool experience).
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/GOBsPlusPlus/tree/master/GoalOrientedBehaviors/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/GOBsPlusPlus/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/Patterns/gob.gif" data-lightbox="Patterns" data-title="Goal Oriented Behavior Demo">
+                            <img src="images/Patterns/gob.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <!-- Abstract Factory -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Abstract Factory</h3>
+                        <p>
+                            This is a demonstration of the abstract factory pattern as described by <a href="https://garywoodfine.com/abstract-factory-design-pattern/" target="_blank">Gary Woodfine</a>.
+                            The abstract factory allows you to produce groups of objects without directly naming their specified classes. Need help deciding what to eat? Give it a try!
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/AbstractFactory/tree/master/AbstractFactory/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/AbstractFactory/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/Patterns/abstract-factory.gif" data-lightbox="Patterns" data-title="Abstract Factory Demo">
+                            <img src="images/Patterns/abstract-factory.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <!-- Prototype Pattern -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Prototype Pattern</h3>
+                        <p>
+                            This is a simple demonstration of the prototype pattern as described by <a href="https://garywoodfine.com/the-prototype-design-pattern-c-net-core/" target="_blank">Gary Woodfine</a>.
+                            The pattern serves as a way to clone exisiting objects that would otherwise be costly to instantiate from scratch.
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/Spawner/tree/master/SpawnSystem/Assets/SpawnScripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/Spawner/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/Patterns/prototype.gif" data-lightbox="Patterns" data-title="Prototype Pattern Demo">
+                            <img src="images/Patterns/prototype.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <!-- Steering Behaviors -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>AI Steering Behaviors</h3>
+                        <p>
+                            This is a collection of dynamic steering behaviors based on Ian Millington's <a href="https://www.amazon.com/AI-Games-Third-Ian-Millington/dp/1138483974" target="_blank">AI for Games</a>.
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/SteeringBehaviors/tree/master/Steering_Behaviors/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/SteeringBehaviors/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/Patterns/steering.gif" data-lightbox="Patterns" data-title="AI Steering Behaviors Demo">
+                            <img src="images/Patterns/steering.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Multiplayer Modal -->
+
+    <div id="Multiplayer" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>MULTIPLAYER SYSTEMS</h2>
+                        <p><strong>Duration:</strong> 1 Semester | <strong>Platform:</strong> Web builds | <strong>Engine and tools:</strong> Unity, C#, PlayFab, Photon</p>
+                        <p>
+                            As part of my degree program I took a course in <strong>multiplayer systems</strong> that taught us how to use Microsoft's
+                            <a href="https://playfab.com/" target="_blank">Azure PlayFab</a> to create multiplayer experiences and leaderboards. The course also explored
+                            multiplayer game principles (e.g. networking options) and RPG game mechanics. Check out some of the projects I completed for this class below.
+                        </p>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Leaderboards -->
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Slab Stack</h3>
+                        <p>
+                            This is a simple game with a user authentication system and cloud based leaderboard. The project uses Microsoft's
+                            Playfab to manage users and the leaderboard.
+                            Hit Play to start. Hit the spacebar to drob a slab. Try to stack as many slabs as you can before time runs out!
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/FlayPab/tree/main/PlayFab/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/FlayPab/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/MP/slab-stack.gif" data-lightbox="multi" data-title="Slab Stack Demo">
+                            <img src="images/MP/slab-stack.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                    <br />
+                    <!-- Battle Royale -->
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Battle Royale</h3>
+                        <p>
+                            This is a multiplayer battle royale game (not to be confused with Fortnite). The project uses <a href="https://www.photonengine.com/" target="_blank">Photon Engine</a> and Unity PUN2 networking framework.
+                            Use arrow keys or WASD to move, space to jump, and point and click to shoot. Collect ammo boxes or healing packs, and fight to be the last one standing!
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/BattleRoyale/tree/master/NotFortnite/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/BattleRoyale/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/MP/battle-royale.gif" data-lightbox="multi" data-title="Battle Royale Demo">
+                            <img src="images/MP/battle-royale.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                    <br />
+                    <!-- Le Chapeau -->
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Le Chapeau</h3>
+                        <p>
+                            This is a multiplayer game created by following a <a href="https://academy.zenva.com/product/intro-to-multiplayer-game-development/" target="_blank">Zenva tutorial</a>.
+                            Use arrow keys or WASD to move and space to jump. The winner is whoever is wearing the hat when the timer runs out!
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/LeChapeau/tree/master/Le%20Chap/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/LeChapeau/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/MP/le-chapeau.gif" data-lightbox="multi" data-title="Le Chapeau Demo">
+                            <img src="images/MP/le-chapeau.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                    <br />
+                    <!-- Le Patate -->
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Le Patate</h3>
+                        <p>
+                            For many of our game development assignments, we were tasked with taking the weeks' lesson and creatively modifying it (often with very silly results).
+                            <i>Le Patate</i> was my spin on the Le Chapeau lesson - fundamentally very similar, but with a hot potatoe-y twist!
+                        </p>
+                        <p>
+                            SEE THE CODE <a href="https://github.com/devinhicks/LePatate/tree/master/LePat/Assets/Scripts" target="_blank">HERE</a>
+                            | PLAY THE DEMO <a href="https://devinhicks.github.io/LePatate/" target="_blank">HERE</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ar16-9">
+                        <a href="images/MP/le-patate.gif" data-lightbox="multi" data-title="Le Patate Demo">
+                            <img src="images/MP/le-patate.gif" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 2D/3D Modal -->
+
+    <div id="art" class="modal" tabindex="-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <button data-dismiss="modal" class="close">&times;</button>
+
+            <div class="container">
+                <!-- 2D -->
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12 ar16-9">
+                        <h2>2D ILLUSTRATIONS</h2>
+                        <p><strong>Tools:</strong> Adobe Photoshop, Adobe Illustrator, Procreate</p>
+                        <br />
+
+                        <!-- Jimi Portrait -->
+                        <a href="images/art/jimi.jpg" data-lightbox="art" data-title="Jimi Hendrix at Newport Pop Festival, 1969 - Pop Art Portrait - Adobe Illustrator, February 2019">
+                            <img src="images/art/jimi.jpg" class="img-fluid" />
+                        </a>
+                        <p>Jimi Hendrix at Newport Pop Festival, 1969 - Pop Art Portrait - Adobe Illustrator, February 2019<br /></p>
+                        <br />
+
+                        <!-- Iron Man -->
+                        <a href="images/art/iron-man.jpg" data-lightbox="art" data-title="Iron Man - Digital Illustration - Adobe Photoshop, January 2019 (My first ever digital illustration!)">
+                            <img src="images/art/iron-man.jpg" class="img-fluid" />
+                        </a>
+                        <p>Iron Man - Digital Illustration - Adobe Photoshop, January 2019<br /></p>
+                        <br />
+
+                        <!-- Jack Torrance -->
+                        <a href="images/art/jack.jpg" data-lightbox="art" data-title="Jack Torrance - Typography Portrait - Adobe Illustrator, February 2019">
+                            <img src="images/art/jack.jpg" class="img-fluid" />
+                        </a>
+                        <p>Jack Torrance - Typography Portrait - Adobe Illustrator, February 2019<br /></p>
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <!-- 3D -->
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                        <h2>3D MODELING & TEXTURING</h2>
+                        <p><strong>Tools:</strong> Maya, ZBrush, Substance Painter, Adobe Photoshop</p>
+
+                        <!-- Witch Sculpt -->
+                        <a href="images/art/witch.gif" data-lightbox="art" data-title="Witch - Organic Sculpt - ZBrush, May 2019">
+                            <img src="images/art/witch.gif" class="img-fluid" />
+                        </a>
+                        <p>Witch - Organic Sculpt - ZBrush, May 2019<br /></p>
+                        <br />
+
+                        <!-- Zelda Amp -->
+                        <a href="images/art/zelda-amp.gif" data-lightbox="art" data-title="Breath of the Wild Amp - Texture Creation - Substance, February 2020">
+                            <img src="images/art/zelda-amp.gif" class="img-fluid" />
+                        </a>
+                        <p>Breath of the Wild Amp - Texture Creation - Substance, February 2020<br /></p>
+                        <br />
+
+                        <!-- Modeling Demo Reel -->
+                        <h4>SEE MY 3D MODELING DEMO REEL <a href="https://drive.google.com/file/d/1wUwiIJ0ACbzxzDN7jpMcb54MFedvRGMy/view?usp=sharing" target="_blank">HERE</a></h4>
+
+                        <!-- Materialization Demo Reel
+                        <video width="100%" height="100%" controls autoplay loop muted>
+                            <source src="images/art/materialization-demo-reel.mp4" type="video/mp4" />
+                        </video>
+                        <p>3D Texturing Demo Reel - Maya, ZBrush, January 2020 - May 2020</p>
+                        <br />-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <script>$(window).scroll(function () {
+            if ($(window).scrollTop() >= 1) {
+                $('.navbar-default').removeClass('unsticky');
+                $('.navbar-default').addClass('sticky');
+            }
+            else {
+                $('.navbar-default').removeClass('sticky');
+                $('.navbar-default').addClass('unsticky');
+            }
+        });</script>
+
 
 </body>
 </html>
